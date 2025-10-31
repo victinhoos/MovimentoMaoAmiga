@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*VARIÁVEIS*/
+:root {
+    --ciano: #008591;
+    --darkcian: #006D77;
+    --bg: #fff;
+    --dark: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+/*cadastro*/
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.esquerda {
+    flex: 1;
+    color: var(--bg);
+    border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-color: var(--darkcian);
+    height: 100vh;
+
+}
+
+.esquerda h2 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.esquerda span {
+    margin-top: 2rem;
+}
+
+.esquerda button {
+    margin-top: 2rem;
+    color: var(--bg);
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--darkcian);
+    border-radius: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid 2px var(--bg);
+    cursor: pointer;
+    transition: ease .5s;
+
+}
+
+.esquerda button:hover {
+    transform: scale(1.2);
+}
+
+.direita .btn-voltar {
+    text-decoration: none;
+    margin: 0rem 0rem 2rem 6rem;
+    background-color: var(--bg);
+    border: none;
+    cursor: pointer;
+    transition: ease .5s;
+
+}
+
+.direita .btn-voltar:hover {
+    transform: scale(1.2);
+}
+
+.direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 1);
+
+    height: 100vh;
+    width: 50%;
+
+}
+
+.tit {
+    position: relative;
+
+}
+
+.direita h2 {
+    color: var(--darkcian);
+    font-weight: 800;
+    font-size: 2rem;
+    align-items: center;
+
+}
+
+.direita span {
+    margin-left: 2.5rem;
+
+}
+
+::placeholder {
+    color: var(--ciano);
+    position: relative;
+
+}
+
+form input {
+    display: flex;
+    padding: .5rem 6rem .5rem 3rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: solid 2px var(--ciano);
+    text-align: left;
+
+
+}
+
+form .i:active {
+    background-color: white;
+}
+
+form .step {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+form .step.active img,
+.step img {
+    position: relative;
+    top: 3rem;
+    padding-left: .7rem;
+}
+
+form .btn-avancar {
+    color: var(--bg);
+    background-color: var(--darkcian);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-left: 6rem;
+    transition: ease .5s;
+}
+
+form .btn-avancar:hover {
+    transform: scale(1.1);
+}
+
+form .step.active {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form .step.active span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+form .step.active span a {
+    text-decoration: none;
+    color: var(--darkcian);
+}
+
+form .btn-validar {
+    color: var(--bg);
+    background-color: var(--darkcian);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: ease .5s;
+    margin-left: 5rem;
+}
+
+form .btn-validar:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:930px) {
+    .esquerda h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .esquerda h2 {
+        font-size: 1.5rem;
+    }
+
+    .esquerda button {
+        font-size: 1.1rem;
+    }
+
+    form input {
+        padding: .5rem 2rem .5rem 4rem;
+        margin-left: 1rem;
+    }
+
+    form img {
+        left: 1rem;
+    }
+
+    .perm-esc {
+
+        flex-direction: column;
+        justify-content: start;
+    }
+
+
+}

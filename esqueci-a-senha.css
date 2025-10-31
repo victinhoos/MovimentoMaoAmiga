@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*VARIÁVEIS*/
+:root {
+    --ciano: #008591;
+    --darkcian: #006D77;
+    --bg: #fff;
+    --dark: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+/*esqueci a senha*/
+.esqueci-a-senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-voltar:hover {
+    transform: scale(1.2);
+}
+
+.tit {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--darkcian);
+}
+
+.btn-voltar {
+    text-decoration: none;
+    margin: 0rem 0rem 2rem 0rem;
+    background-color: var(--bg);
+    border: none;
+    cursor: pointer;
+    transition: ease .5s;
+
+}
+
+span {
+    margin-top: 2rem;
+}
+
+
+::placeholder {
+    color: var(--ciano);
+    position: relative;
+
+}
+
+form input {
+    display: flex;
+    padding: .5rem 6rem .5rem 3rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: solid 2px var(--ciano);
+    text-align: left;
+
+
+}
+
+form img {
+    position: relative;
+    top: 3rem;
+    padding-left: .7rem;
+}
+
+form .i:active {
+    background-color: white;
+}
+
+
+form .btn-alterar {
+    color: var(--bg);
+    background-color: var(--darkcian);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+    position: relative;
+    cursor: pointer;
+    transition: ease .5s;
+    margin-left: 5rem;
+}
+
+form .btn-alterar:hover {
+    transform: scale(1.2);
+}
