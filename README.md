@@ -2,6 +2,8 @@
 
 ## 📚 Sobre o projeto:
 
+### Data: março de 2025 - maio de 2025
+
 ### 📚 Justificativa do MMA
 
    Este projeto nasceu de um desafio real: a dificuldade em encontrar ONGs ativas e com informações acessíveis durante um projeto interdisciplinar. Percebemos que essa falta de visibilidade digital é uma grande barreira, impedindo que organizações sérias se conectem com voluntários, doadores e parceiros. Para solucionar essa lacuna, desenvolvemos uma plataforma web que atua como um hub centralizado. O objetivo é dar às ONGs um espaço para divulgarem seus serviços, necessidades e causas.
